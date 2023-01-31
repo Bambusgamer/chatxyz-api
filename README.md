@@ -1,6 +1,6 @@
 # chatxyz-api
 
-## Description
+## About
 
 This is a simple API for a chat application i'm working on for funs and to learn more about express and websites in general.
 
@@ -9,7 +9,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
 /api
 
 - /auth
-  - post /login
+  - [post /login](####post-/login)
   - post /signup
   - post /logout
   - get /status
@@ -53,3 +53,160 @@ This is a simple API for a chat application i'm working on for funs and to learn
   - get /:id
   - post /:id/accept
   - post /:id/decline
+
+## **Routes**
+
+- ## **/api/auth**
+
+  - ## **post /api/auth/signup**
+
+    - [x] done
+    - [ ] secure
+
+    > Create a new account
+
+    ### **Request**
+
+    ```json
+    {
+    	"username": String,
+    	"password": String,
+    	"email": String
+    }
+    ```
+
+    ### **Response**
+
+    <br> Successful signup:
+
+    ```json
+    {
+    	"status": 200,
+    	"message": "Account created successfully"
+    }
+    ```
+
+    <br> Failed signup:
+
+    > Username is allready in use:
+
+    ```json
+    {
+    	"status": 400,
+    	"message": "Username already in use"
+    }
+    ```
+
+    > Email is allready in use:
+
+    ```json
+    {
+    	"status": 400,
+    	"message": "Email already in use"
+    }
+    ```
+
+    <br> Internal server error:
+
+    ```json
+    {
+    	"status": 500,
+    	"message": "Internal server error"
+    }
+    ```
+
+    <br>
+
+  - ## **post /api/auth/login**
+
+    - [x] done
+    - [ ] secure
+
+    > Login with username or email
+
+    ### **Request**
+
+    <br> using username:
+
+    ```json
+    {
+      "username": String,
+      "password": String
+    }
+    ```
+
+    <br>using email:
+
+    ```json
+    {
+      "email": String,
+      "password": String
+    }
+    ```
+
+    ### **Response**
+
+    <br> Successful login:
+
+    ```json
+    {
+      "status": 200,
+      "message": "Logged in successfully",
+      "token": String,
+    }
+    ```
+
+    > token is a JWT token with a lifetime of 14 days that is required for all secured routes
+
+    <br> Failed login:
+
+    ```json
+    {
+    	"status": 401,
+    	"message": "Incorrect credentials"
+    }
+    ```
+
+    <br> Internal server error:
+
+    ```json
+    {
+    	"status": 500,
+    	"message": "Internal server error"
+    }
+    ```
+
+    <br>
+
+  - ## **post /api/auth/logout**
+
+    - [x] done
+    - [x] secure
+
+    > Logout
+
+    ### **Request**
+
+    <br> No request body
+
+    ### **Response**
+
+    <br> Successful logout:
+
+    ```json
+    {
+    	"status": 200,
+    	"message": "Logged out successfully"
+    }
+    ```
+
+    <br> Internal server error:
+
+    ```json
+    {
+    	"status": 500,
+    	"message": "Internal server error"
+    }
+    ```
+
+    <br>
