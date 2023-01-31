@@ -608,7 +608,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
   - ## **get /api/friends**
 
-    - [] done
+    - [ ] done
     - [x] secure
 
     > Returns all ids of users that the current user is friends with
@@ -2116,69 +2116,3 @@ This is a simple API for a chat application i'm working on for funs and to learn
     ```
 
     <br>
-
-# Paths
-
-[**/api**](#api)
-
-- [**/auth**](#api/auth)
-
-  - **POST** - [**/signup**](#post-apiauthsignup)
-  - **POST** - [**/login**](#post-apiauthlogin)
-  - **POST** - [**/logout**](#post-apiauthlogout)
-  - **GET** - [**/status**](#get-apiauthstatus)
-
-- [**/users**](#api/users)
-
-  - [**/@me**](#get-apiusersme)
-    - **GET** - [**/**](#get-apiusersme)
-    - **PUT** - [**/username**](#post-apiusersmeusername)
-    - **PUT** - [**/email**](#post-apiusersmeemail)
-    - **PUT** - [**/password**](#post-apiusersmepassword)
-    - **PUT** - [**/avatar**](#post-apiusersmeavatar)
-  - [**/:userId**](#get-apiusersuserid)
-    - **GET** - [**/**](#get-apiusersuserid)
-    - **GET** - [**/relationships**](#get-apiusersuseridrelationships)
-
-- [**/friends**](#api/friends)
-
-  - **GET** - [**/**](#get-apifriendsme)
-  - **POST** - [**/:userId**](#post-apifriendsuserid)
-  - **DELETE** - [**/:userId**](#delete-apifriendsuserid)
-  - **GET** - [**/requests**](#get-apifriendsrequests)
-    - [**/:id**](#post-apifriendsrequestsid)
-      - **DELETE** - [**/**](#post-apifriendsrequestsid)
-      - **POST** - [**/accept**](#post-apifriendsrequestsidaccept)
-      - **POST** - [**/decline**](#post-apifriendsrequestsiddecline)
-
-- [**/chats**](#api/chats)
-
-  - **GET** - [**/**](#get-apichats)
-  - **POST** - [**/**](#post-apichats)
-  - [**/:chatId**](#get-apichatschatid)
-    - **GET** - [**/**](#get-apichatschatid)
-    - **DELETE** - [**/**](#delete-apichatschatid)
-    - **POST** - [**/leave**](#post-apichatschatidleave)
-    - [**/messages**](#get-apichatschatidmessages)
-      - **GET** - [**/**](#get-apichatschatidmessages)
-      - **POST** - [**/**](#post-apichatschatidmessages)
-      - [**/:messageId**](#get-apichatschatidmessagesmessageid)
-        - **GET** - [**/**](#get-apichatschatidmessagesmessageid)
-        - **PUT** - [**/**](#put-apichatschatidmessagesmessageid)
-        - **DELETE** - [**/**](#delete-apichatschatidmessagesmessageid)
-    - [**/members**](#get-apichatschatidmembers)
-      - **GET** - [**/**](#get-apichatschatidmembers)
-      - [**/:userId**](#get-apichatschatidmembersmemberid)
-        - **PUT** - [**/role**](#put-apichatschatidmembersmemberid)
-        - **DELETE** - [**/**](#delete-apichatschatidmembersmemberid)
-    - [**/invites**](#get-apichatschatidinvites)
-      - **GET** - [**/**](#get-apichatschatidinvites)
-      - **POST** - [**/**](#post-apichatschatidinvites)
-      - [**/:inviteId**](#get-apichatschatidinvitesinviteid)
-        - **DELETE** - [**/**](#delete-apichatschatidinvitesinviteid)
-
-- [**/invites**](#api/invites)
-  - [**/:inviteId**](#get-apiinvitesinviteid)
-    - **GET** - [**/**](#get-apiinvitesinviteid)
-    - **POST** - [**/accept**](#post-apiinvitesinviteidaccept)
-    - **POST** - [**/decline**](#post-apiinvitesinviteiddecline)
