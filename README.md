@@ -106,9 +106,9 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"username": String,
-    	"password": String,
-    	"email": String
+      "username": String,
+      "password": String,
+      "email": String
     }
     ```
 
@@ -118,8 +118,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Account created successfully"
+      "status": 200,
+      "message": "Account created successfully"
     }
     ```
 
@@ -129,8 +129,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Username already in use"
+      "status": 400,
+      "message": "Username already in use"
     }
     ```
 
@@ -138,8 +138,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Email already in use"
+      "status": 400,
+      "message": "Email already in use"
     }
     ```
 
@@ -147,8 +147,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -199,8 +199,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 401,
-    	"message": "Incorrect credentials"
+      "status": 401,
+      "message": "Incorrect credentials"
     }
     ```
 
@@ -208,8 +208,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -232,8 +232,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Logged out successfully"
+      "status": 200,
+      "message": "Logged out successfully"
     }
     ```
 
@@ -241,8 +241,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -265,9 +265,9 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Authenticated",
-    	"userId": String
+      "status": 200,
+      "message": "Authenticated",
+      "userId": String
     }
     ```
 
@@ -275,8 +275,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 401,
-    	"message": "Not authenticated"
+      "status": 401,
+      "message": "Not authenticated"
     }
     ```
 
@@ -284,8 +284,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -310,14 +310,14 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "User found",
-    	"user": {
+      "status": 200,
+      "message": "User found",
+      "user": {
         "id": String,
-    		"username": String,
-    		"email": String,
-    		"avatar": String,
-    	}
+        "username": String,
+        "email": String,
+        "avatar": String,
+      }
     }
     ```
 
@@ -325,8 +325,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "User not found"
+      "status": 404,
+      "message": "User not found"
     }
     ```
 
@@ -334,8 +334,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -373,8 +373,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "User not found"
+      "status": 404,
+      "message": "User not found"
     }
     ```
 
@@ -382,8 +382,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -423,8 +423,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "User not found"
+      "status": 404,
+      "message": "User not found"
     }
     ```
 
@@ -432,8 +432,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -460,8 +460,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Username updated successfully"
+      "status": 200,
+      "message": "Username updated successfully"
     }
     ```
 
@@ -469,8 +469,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Username already in use"
+      "status": 400,
+      "message": "Username already in use"
     }
     ```
 
@@ -478,8 +478,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -506,8 +506,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Email updated successfully"
+      "status": 200,
+      "message": "Email updated successfully"
     }
     ```
 
@@ -515,8 +515,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Email already in use"
+      "status": 400,
+      "message": "Email already in use"
     }
     ```
 
@@ -524,8 +524,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -552,8 +552,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Password updated successfully"
+      "status": 200,
+      "message": "Password updated successfully"
     }
     ```
 
@@ -561,8 +561,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -589,8 +589,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Avatar updated successfully"
+      "status": 200,
+      "message": "Avatar updated successfully"
     }
     ```
 
@@ -598,8 +598,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -640,8 +640,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -664,8 +664,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Friend request sent successfully"
+      "status": 200,
+      "message": "Friend request sent successfully"
     }
     ```
 
@@ -673,8 +673,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Friend added successfully"
+      "status": 200,
+      "message": "Friend added successfully"
     }
     ```
 
@@ -682,8 +682,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Friend request already sent"
+      "status": 400,
+      "message": "Friend request already sent"
     }
     ```
 
@@ -691,8 +691,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "User not found"
+      "status": 404,
+      "message": "User not found"
     }
     ```
 
@@ -700,8 +700,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -724,8 +724,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Friend removed successfully"
+      "status": 200,
+      "message": "Friend removed successfully"
     }
     ```
 
@@ -733,8 +733,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Not a friend with this user"
+      "status": 400,
+      "message": "Not a friend with this user"
     }
     ```
 
@@ -742,8 +742,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "User not found"
+      "status": 404,
+      "message": "User not found"
     }
     ```
 
@@ -751,8 +751,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -794,8 +794,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "No friend requests found",
+      "status": 200,
+      "message": "No friend requests found",
       "requests": []
     }
     ```
@@ -804,8 +804,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -828,8 +828,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Friend request deleted successfully"
+      "status": 200,
+      "message": "Friend request deleted successfully"
     }
     ```
 
@@ -837,8 +837,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Not sent by current user"
+      "status": 400,
+      "message": "Not sent by current user"
     }
     ```
 
@@ -846,8 +846,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Friend request not found"
+      "status": 404,
+      "message": "Friend request not found"
     }
     ```
 
@@ -855,8 +855,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -879,8 +879,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Friend request accepted successfully"
+      "status": 200,
+      "message": "Friend request accepted successfully"
     }
     ```
 
@@ -888,8 +888,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Not sent to current user"
+      "status": 400,
+      "message": "Not sent to current user"
     }
     ```
 
@@ -897,8 +897,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Friend request not found"
+      "status": 404,
+      "message": "Friend request not found"
     }
     ```
 
@@ -906,8 +906,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -930,8 +930,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "Friend request rejected successfully"
+      "status": 200,
+      "message": "Friend request rejected successfully"
     }
     ```
 
@@ -939,8 +939,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Not sent to current user"
+      "status": 400,
+      "message": "Not sent to current user"
     }
     ```
 
@@ -948,8 +948,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Friend request not found"
+      "status": 404,
+      "message": "Friend request not found"
     }
     ```
 
@@ -957,8 +957,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1007,8 +1007,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "No chats found",
+      "status": 200,
+      "message": "No chats found",
       "chats": []
     }
     ```
@@ -1017,8 +1017,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1071,8 +1071,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Invalid chat type"
+      "status": 400,
+      "message": "Invalid chat type"
     }
     ```
 
@@ -1080,8 +1080,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 400,
-    	"message": "Invalid user id"
+      "status": 400,
+      "message": "Invalid user id"
     }
     ```
 
@@ -1089,8 +1089,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "User not found"
+      "status": 404,
+      "message": "User not found"
     }
     ```
 
@@ -1098,8 +1098,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1145,8 +1145,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1154,8 +1154,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1163,8 +1163,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1219,8 +1219,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1228,8 +1228,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1237,8 +1237,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1280,8 +1280,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1289,8 +1289,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Message not found"
+      "status": 404,
+      "message": "Message not found"
     }
     ```
 
@@ -1298,8 +1298,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1307,8 +1307,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1354,8 +1354,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1363,8 +1363,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1372,8 +1372,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1419,8 +1419,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1428,8 +1428,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Message not found"
+      "status": 404,
+      "message": "Message not found"
     }
     ```
 
@@ -1437,8 +1437,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1446,8 +1446,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1479,8 +1479,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1488,8 +1488,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Message not found"
+      "status": 404,
+      "message": "Message not found"
     }
     ```
 
@@ -1497,8 +1497,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1506,8 +1506,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1547,8 +1547,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1556,8 +1556,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1565,8 +1565,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1609,8 +1609,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1618,8 +1618,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Member not found"
+      "status": 404,
+      "message": "Member not found"
     }
     ```
 
@@ -1627,8 +1627,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1636,8 +1636,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1669,8 +1669,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1678,8 +1678,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Member not found"
+      "status": 404,
+      "message": "Member not found"
     }
     ```
 
@@ -1687,8 +1687,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1696,8 +1696,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1742,8 +1742,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1751,8 +1751,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1760,8 +1760,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1804,8 +1804,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1813,8 +1813,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1822,8 +1822,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1855,8 +1855,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1864,8 +1864,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Invite not found"
+      "status": 404,
+      "message": "Invite not found"
     }
     ```
 
@@ -1873,8 +1873,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -1882,8 +1882,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1915,8 +1915,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Chat not found"
+      "status": 404,
+      "message": "Chat not found"
     }
     ```
 
@@ -1924,8 +1924,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "User not a member"
+      "status": 404,
+      "message": "User not a member"
     }
     ```
 
@@ -1933,8 +1933,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "User is owner"
+      "status": 403,
+      "message": "User is owner"
     }
     ```
 
@@ -1942,8 +1942,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -1984,8 +1984,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Invite not found"
+      "status": 404,
+      "message": "Invite not found"
     }
     ```
 
@@ -1993,8 +1993,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Forbidden"
+      "status": 403,
+      "message": "Forbidden"
     }
     ```
 
@@ -2002,8 +2002,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -2035,8 +2035,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Invite not found"
+      "status": 404,
+      "message": "Invite not found"
     }
     ```
 
@@ -2044,8 +2044,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "User already a member"
+      "status": 403,
+      "message": "User already a member"
     }
     ```
 
@@ -2053,8 +2053,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Invite already used"
+      "status": 403,
+      "message": "Invite already used"
     }
     ```
 
@@ -2062,8 +2062,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
@@ -2095,8 +2095,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 404,
-    	"message": "Invite not found"
+      "status": 404,
+      "message": "Invite not found"
     }
     ```
 
@@ -2104,8 +2104,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 403,
-    	"message": "Invite already used"
+      "status": 403,
+      "message": "Invite already used"
     }
     ```
 
@@ -2113,8 +2113,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 500,
-    	"message": "Internal server error"
+      "status": 500,
+      "message": "Internal server error"
     }
     ```
 
