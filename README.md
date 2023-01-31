@@ -362,8 +362,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
     	"message": "User found",
     	"user": {
         "id": String,
-    		"username": String,
-    		"avatar": String,
+        "username": String,
+        "avatar": String,
     	}
     }
     ```
