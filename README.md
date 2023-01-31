@@ -358,14 +358,14 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ```js
     {
-    	"status": 200,
-    	"message": "User found",
-    	"user": {
-    		"id": String,
-    		"username": String,
-    		"email": String,
-    		"avatar": String,
-    	}
+      "status": 200,
+      "message": "User found",
+      "user": {
+        "id": String,
+        "username": String,
+        "email": String,
+        "avatar": String,
+      }
     }
     ```
 
@@ -411,9 +411,9 @@ This is a simple API for a chat application i'm working on for funs and to learn
       "message": "Relationships found",
       "relationships": [
         {
-      		"id": String,
-      		"username": String,
-      		"avatar": String
+          "id": String,
+          "username": String,
+          "avatar": String
         }
       ]
     }
