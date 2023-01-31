@@ -213,7 +213,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/auth/logout**
 
@@ -289,7 +289,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
 - ## **/api/users**
 
@@ -339,7 +339,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **get /api/users/:userId**
 
@@ -386,7 +386,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **get /api/users/:userId/relationships**
 
@@ -436,7 +436,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **put /api/users/@me/username**
 
@@ -482,7 +482,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **put /api/users/@me/email**
 
@@ -528,7 +528,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **put /api/users/@me/password**
 
@@ -565,7 +565,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **put /api/users/@me/avatar**
 
@@ -602,7 +602,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
 - ## **/api/friends**
 
@@ -644,7 +644,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/friends/:userId**
 
@@ -704,7 +704,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **delete /api/friends/:userId**
 
@@ -755,7 +755,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **get /api/friends/requests**
 
@@ -808,7 +808,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **delete /api/friends/requests/:id**
 
@@ -859,7 +859,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/friends/requests/:id/accept**
 
@@ -910,7 +910,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/friends/requests/:id/reject**
 
@@ -961,7 +961,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
 - ## **/api/chats**
 
@@ -1021,7 +1021,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/chats**
 
@@ -1102,7 +1102,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **get /api/chats/:chatId**
 
@@ -1167,7 +1167,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **get /api/chats/:chatId/messages**
 
@@ -1241,7 +1241,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **get /api/chats/:chatId/messages/:messageId**
 
@@ -1311,7 +1311,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/chats/:chatId/messages**
 
@@ -1376,7 +1376,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **put /api/chats/:chatId/messages/:messageId**
 
@@ -1450,7 +1450,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **delete /api/chats/:chatId/messages/:messageId**
 
@@ -1510,7 +1510,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **get /api/chats/:chatId/members**
 
@@ -1569,7 +1569,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **put /api/chats/:chatId/members/:memberId**
 
@@ -1640,7 +1640,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **delete /api/chats/:chatId/members/:memberId**
 
@@ -1700,7 +1700,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/chats/:chatId/invites**
 
@@ -1764,7 +1764,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **get /api/chats/:chatId/invites**
 
@@ -1826,7 +1826,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **delete /api/chats/:chatId/invites/:inviteId**
 
@@ -1886,7 +1886,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/chats/:chatId/leave**
 
@@ -1946,7 +1946,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **get /api/invites/:inviteId**
 
@@ -2006,7 +2006,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/invites/:inviteId/accept**
 
@@ -2066,7 +2066,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
 
   - ## **post /api/invites/:inviteId/decline**
 
@@ -2117,4 +2117,4 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    [navigate to top](#api-reference)
+    ###### [navigate to top](#api-reference)
