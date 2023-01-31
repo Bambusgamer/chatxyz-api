@@ -128,7 +128,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     <br> using username:
 
-    ```json
+    ```js
     {
       "username": String,
       "password": String
@@ -137,7 +137,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     <br>using email:
 
-    ```json
+    ```js
     {
       "email": String,
       "password": String
