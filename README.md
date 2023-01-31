@@ -8,7 +8,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
 ### [**/api**](#api)
 
-### [**/api/auth**](#api/auth)
+### [**api/auth**](#apiauth)
 
 **POST** - [**/api/auth/signup**](#post-apiauthsignup)<br>
 **POST** - [**/api/auth/login**](#post-apiauthlogin)<br>
@@ -32,7 +32,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
 #### [**/api/friends**](#api/friends)
 
-**GET** - [**/api/friends**](#get-apifriendsme)<br>
+**GET** - [**/api/friends**](#get-apifriends)<br>
 **POST** - [**/api/friends/:userId**](#post-apifriendsuserid)<br>
 **DELETE** - [**/api/friends/:userId**](#delete-apifriendsuserid)<br>
 **GET** - [**/api/friends/requests**](#get-apifriendsrequests)<br>
@@ -83,7 +83,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
 **DELETE** - [**/api/chats/:chatId/invites/:inviteId**](#delete-apichatschatidinvitesinviteid)<br>
 
-#### [**/api/invites**](#api/invites)
+#### [**/api/invites**](#apiinvites)
 
 ##### [**/api/invites/:inviteId**](#get-apiinvitesinviteid)
 
@@ -91,7 +91,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
 **POST** - [**/api/invites/:inviteId/accept**](#post-apiinvitesinviteidaccept)<br>
 **POST** - [**/api/invites/:inviteId/decline**](#post-apiinvitesinviteiddecline)<br>
 
-## **api**
+## **/api**
 
 - ## **/api/auth**
 
@@ -152,7 +152,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    <br>
+    [navigate to top](#api-reference)
 
   - ## **post /api/auth/login**
 
@@ -213,7 +213,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    <br>
+      <br>
 
   - ## **post /api/auth/logout**
 
