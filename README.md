@@ -77,7 +77,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     ### **Response**
 
-    <br> Successful signup:
+    #### Successful signup:
 
     ```json
     {
@@ -86,7 +86,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    <br> Failed signup:
+    #### Failed signup:
 
     > Username is allready in use:
 
@@ -106,7 +106,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    <br> Internal server error:
+    #### Internal server error:
 
     ```json
     {
