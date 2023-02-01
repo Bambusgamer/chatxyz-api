@@ -93,6 +93,60 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
 ## **/api**
 
+- ## **secure routes**
+
+  ### **Request**
+
+  **Headers**:
+
+  ```js
+  {
+    'x-access-token': String
+  }
+  ```
+
+  ### **Response**
+
+  #### Successful authentication:
+
+  > Redirects to the requested route
+
+  #### Missing Token:
+
+  ```js
+  {
+    "status": 403,
+    "message": "No token provided"
+  }
+  ```
+
+  #### Invalid Token:
+
+  ```js
+  {
+    "status": 401,
+    "message": "Invalid token"
+  }
+  ```
+
+  #### Deleted Token:
+
+  ```js
+  {
+    "status": 401,
+    "message": "Deleted token"
+  }
+  ```
+
+  #### Expired Token:
+
+  ```js
+  {
+    "status": 401,
+    "message": "Expired token"
+  }
+  ```
+
 - ## **/api/auth**
 
   - ## **post /api/auth/signup**

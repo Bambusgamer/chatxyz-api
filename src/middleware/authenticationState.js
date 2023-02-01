@@ -6,23 +6,16 @@ const config = require('../../config');
 
 // middleware to check if user is authenticated
 module.exports = (req, res, next) => {
-    console.log('Authentication state middleware')
-
     const token = req.headers['x-access-token'];
-    console.log(token)
 
     if (!token) {
-        console.log('Missing token')
         return res.status(401).json({
-            message: 'Missing token',
+            message: 'No token provided',
         });
     }
 
     jwt.verify(token, config.jwt.secret, async (err, decoded) => {
-        console.log(decoded)
         if (err) {
-            console.log(err)
-            console.log('Invalid token')
             return res.status(401).json({
                 message: 'Invalid token',
             });
@@ -34,25 +27,21 @@ module.exports = (req, res, next) => {
         });
 
         if (!session) {
-            console.log('Invalid token')
             return res.status(401).json({
                 message: 'Invalid token',
             });
         } else if (session.isDeleted) {
-            console.log('Session deleted')
             return res.status(401).json({
-                message: 'Session deleted',
+                message: 'Deleted token',
             });
         } else if (session.expiresAt < Date.now()) {
-            console.log('Session expired')
             return res.status(401).json({
-                message: 'Session expired',
+                message: 'Expired token',
             });
         }
 
         req.user = decoded.user;
 
-        console.log('User authenticated')
         next();
     });
 };
