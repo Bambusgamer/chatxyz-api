@@ -15,15 +15,13 @@ module.exports = (req, res) => {
         },
     }, null, (err, sessions) => {
         if (err) {
-            return res.send({
-                success: false,
-                message: 'Error: Server error',
+            return res.status(500).send({
+                message: 'Internal server error',
             });
         }
 
-        return res.send({
-            success: true,
-            message: 'Good',
+        return res.status(200).send({
+            message: 'Logged out',
         });
     });
 };

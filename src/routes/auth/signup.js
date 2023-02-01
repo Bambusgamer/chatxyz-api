@@ -39,14 +39,30 @@ module.exports = (req, res) => {
         .then(() => userAuthentication.save())
         .then(() => {
             return res.status(200).json({
-                message: 'User created',
+                message: 'Account created',
             });
         })
         .catch((err) => {
             if (err.code === 11000) {
-                return res.status(400).json({
-                    message: 'Username or email already exists',
+                const username = User.countDocuments({
+                    username: req.body.username,
                 });
+                const email = User.countDocuments({
+                    email: req.body.email,
+                });
+                if (email > 0 && username > 0) {
+                    return res.status(409).json({
+                        message: 'Username and email already taken',
+                    });
+                } else if (email > 0) {
+                    return res.status(409).json({
+                        message: 'Email already taken',
+                    });
+                } else if (username > 0) {
+                    return res.status(409).json({
+                        message: 'Username already taken',
+                    });
+                }
             }
 
             return res.status(500).json({

@@ -26,8 +26,6 @@ module.exports = (req, res, next) => {
             });
         };
 
-        if (admin) return next();
-
         ChatMessage.findOne({
             chat: req.chat.id,
             id: messageId,
@@ -43,6 +41,10 @@ module.exports = (req, res, next) => {
                     message: 'Message not found',
                 });
             };
+
+            req.message = message;
+
+            if (admin) return next();
 
             if (message.author !== req.user.id) {
                 return res.status(403).json({

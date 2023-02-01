@@ -3,7 +3,6 @@ const {
 } = require('../structure/schemas');
 
 module.exports = (req, res, next) => {
-    console.log(req.params)
     Chat.findOne({
         id: req.params.chatId,
     }, (err, chat) => {

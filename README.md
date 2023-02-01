@@ -8,6 +8,8 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
 ### [**/api**](#api)
 
+### [**secure routes**](#secure-routes)
+
 ### [**api/auth**](#apiauth)
 
 **POST** - [**/api/auth/signup**](#post-apiauthsignup)<br>
@@ -173,27 +175,45 @@ This is a simple API for a chat application i'm working on for funs and to learn
     ```js
     {
       "status": 200,
-      "message": "Account created successfully"
+      "message": "Account created"
     }
     ```
 
     #### Failed signup:
 
-    > Username is allready in use:
+    > Missing required fields:
 
     ```js
     {
       "status": 400,
-      "message": "Username already in use"
+      "message": "Missing required fields"
     }
     ```
 
-    > Email is allready in use:
+    > Username and email already taken:
 
     ```js
     {
       "status": 400,
-      "message": "Email already in use"
+      "message": "Username and email already taken"
+    }
+    ```
+
+    > Username already taken:
+
+    ```js
+    {
+      "status": 400,
+      "message": "Username already taken"
+    }
+    ```
+
+    > Email already taken:
+
+    ```js
+    {
+      "status": 400,
+      "message": "Email already taken"
     }
     ```
 
@@ -242,7 +262,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     ```js
     {
       "status": 200,
-      "message": "Logged in successfully",
+      "message": "Logged in",
       "token": String,
     }
     ```
@@ -251,10 +271,21 @@ This is a simple API for a chat application i'm working on for funs and to learn
 
     #### **Failed login:**
 
+    > Missing required fields:
+
+    ```js
+    {
+      "status": 400,
+      "message": "Missing required fields"
+    }
+    ```
+
+    > Invalid credentials:
+
     ```js
     {
       "status": 401,
-      "message": "Incorrect credentials"
+      "message": "Invalid credentials"
     }
     ```
 
@@ -287,7 +318,7 @@ This is a simple API for a chat application i'm working on for funs and to learn
     ```js
     {
       "status": 200,
-      "message": "Logged out successfully"
+      "message": "Logged out"
     }
     ```
 
@@ -325,14 +356,9 @@ This is a simple API for a chat application i'm working on for funs and to learn
     }
     ```
 
-    #### **Not authenticated:**
+    #### **Failed request:**
 
-    ```js
-    {
-      "status": 401,
-      "message": "Not authenticated"
-    }
-    ```
+    [see secure routes](#secure-routes)
 
     #### **Internal server error:**
 
