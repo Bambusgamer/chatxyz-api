@@ -1,6 +1,6 @@
 const {
     User,
-} = require('../../structure/schemas');
+} = require('../../../structure/schemas');
 
 module.exports = (req, res) => {
     const {

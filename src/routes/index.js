@@ -9,12 +9,16 @@ router.use('/', (req, res, next) => {
 })
 
 const auth = require('./auth');
-const user = require('./user');
-const chat = require('./chats');
+const users = require('./users');
+const friends = require('./friends');
+const invites = require('./invites');
+const chats = require('./chats');
 
 router.use('/auth', auth);
-router.use('/user', user);
-router.use('/chats', chat);
+router.use('/users', users);
+router.use('/friends', friends);
+router.use('/invites', invites);
+router.use('/chats', chats);
 
 
 module.exports = router;

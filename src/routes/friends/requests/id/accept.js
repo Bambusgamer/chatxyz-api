@@ -1,20 +1,21 @@
 const {
+    UserFriend,
     UserFriendRequest,
-} = require('../../structure/schemas');
+} = require('../../../../structure/schemas');
 
 module.exports = (req, res) => {
     const {
-        friendId,
+        id,
     } = req.body;
 
-    if (!friendId) {
+    if (!id) {
         return res.status(400).json({
             message: 'Missing userId',
         });
     }
 
     UserFriendRequest.countDocuments({
-        user: friendId,
+        user: id,
     }, (err, count) => {
         if (err) {
             return res.status(500).json({
@@ -31,14 +32,14 @@ module.exports = (req, res) => {
         UserFriendRequest.updateOne({
             $or: [{
                 user: req.user,
-                friend: friendId,
+                friend: id,
             }, {
-                user: friendId,
+                user: id,
                 friend: req.user,
             }],
         }, {
             $set: {
-                rejected: true,
+                accepted: true,
                 updatedAt: Date.now(),
             }
         }, (err) => {
@@ -48,8 +49,21 @@ module.exports = (req, res) => {
                 });
             }
 
-            return res.json({
-                message: 'Friend request rejected',
+            const userFriend = new UserFriend({
+                user: req.user,
+                friend: id,
+            });
+
+            userFriend.save((err) => {
+                if (err) {
+                    return res.status(500).json({
+                        message: 'Internal server error',
+                    });
+                }
+
+                return res.json({
+                    message: 'Friend request accepted',
+                });
             });
         });
     });

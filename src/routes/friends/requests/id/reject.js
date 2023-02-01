@@ -1,26 +1,20 @@
 const {
     UserFriendRequest,
-} = require('../../structure/schemas');
+} = require('../../../../structure/schemas');
 
 module.exports = (req, res) => {
     const {
-        friendId,
+        id,
     } = req.body;
 
-    if (!friendId) {
+    if (!id) {
         return res.status(400).json({
             message: 'Missing userId',
         });
     }
 
     UserFriendRequest.countDocuments({
-        $or: [{
-            user: req.user,
-            friend: friendId
-        }, {
-            user: friendId,
-            friend: req.user,
-        }],
+        user: id,
     }, (err, count) => {
         if (err) {
             return res.status(500).json({
@@ -34,14 +28,19 @@ module.exports = (req, res) => {
             });
         }
 
-        UserFriendRequest.deleteOne({
+        UserFriendRequest.updateOne({
             $or: [{
                 user: req.user,
-                friend: friendId,
+                friend: id,
             }, {
-                user: friendId,
+                user: id,
                 friend: req.user,
             }],
+        }, {
+            $set: {
+                rejected: true,
+                updatedAt: Date.now(),
+            }
         }, (err) => {
             if (err) {
                 return res.status(500).json({
@@ -50,8 +49,8 @@ module.exports = (req, res) => {
             }
 
             return res.json({
-                message: 'Friend request deleted',
+                message: 'Friend request rejected',
             });
         });
     });
-};
+}

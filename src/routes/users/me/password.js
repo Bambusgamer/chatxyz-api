@@ -1,10 +1,10 @@
 const {
     UserAuthentication,
     UserSession,
-} = require('../../structure/schemas');
+} = require('../../../structure/schemas');
+const config = require('../../../../config');
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
-const config = require('../../../config');
 
 module.exports = async (req, res) => {
     const user = req.user;

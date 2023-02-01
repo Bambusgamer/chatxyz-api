@@ -1,18 +1,18 @@
 const {
-    UserFriend, UserFriendRequest,
-} = require('../../structure/schemas');
+    UserFriend
+} = require('../../../structure/schemas');
 
 module.exports = (req, res) => {
     const {
-        friendId,
+        userId,
     } = req.body;
 
     UserFriend.findOne({
         $or: [{
             user: req.user,
-            friend: friendId,
+            friend: userId,
         }, {
-            user: friendId,
+            user: userId,
             friend: req.user,
         }],
     }, (err, friend) => {

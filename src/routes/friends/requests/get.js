@@ -1,6 +1,6 @@
 const {
     UserFriendRequest,
-} = require('../../structure/schemas');
+} = require('../../../structure/schemas');
 
 module.exports = (req, res) => {
     UserFriendRequest.find({
@@ -16,9 +16,8 @@ module.exports = (req, res) => {
             });
         }
 
-        return res.json({
+        return res.status(200).json({
             message: 'Friend requests retrieved',
-            // how do i map trough a array and delete one specific value?
             friendRequests: friendRequests.map(friendRequest => ({
                 user: friendRequest.user,
                 friend: friendRequest.friend,
